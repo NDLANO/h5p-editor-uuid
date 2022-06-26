@@ -25,6 +25,7 @@
     "h5p-types": "github:boyum/h5p-types",
     "prettier": "^2.6.2",
     "prettier-config": "github:boyum/prettier-config",
+    "typescript": "^4.7.4",    
     "vite": "^2.8.6"
   },
   "dependencies": {
