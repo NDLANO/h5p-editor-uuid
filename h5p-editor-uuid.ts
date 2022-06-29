@@ -1,6 +1,5 @@
 import type { H5PFieldText, IH5PWidget } from "h5p-types";
-import { H5PWidget } from "h5p-utils/src/models/H5PWidget";
-import { H5P, H5PEditor } from "h5p-utils/src/utils/H5P.utils";
+import { H5P, H5PWidget, registerWidget } from "h5p-utils";
 
 class UUIDWidget extends H5PWidget<H5PFieldText> implements IH5PWidget {
   appendTo() {
@@ -26,5 +25,4 @@ class UUIDWidget extends H5PWidget<H5PFieldText> implements IH5PWidget {
   remove() {}
 }
 
-(H5PEditor as any).UUIDWidget = UUIDWidget;
-(H5PEditor as any).widgets.uuid = UUIDWidget;
+registerWidget("UUIDWidget", "uuid", UUIDWidget);
