@@ -30,6 +30,6 @@
   },
   "prettier": "prettier-config",
   "dependencies": {
-    "h5p-utils": "^2.2.0"
+    "h5p-utils": "^3.0.0"
   }
 }
