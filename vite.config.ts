@@ -32,12 +32,12 @@ export default defineConfig({
       input: "h5p-editor-uuid.ts",
       output: {
         file: "h5p-editor-uuid.js",
-        dir: null,
-        inlineDynamicImports: true,
-        manualChunks: null,
+        dir: undefined,
+        esModule: false,
+        format: "iife",
       },
     },
 
-    target: "es2015",
+    target: "es6",
   },
 });
