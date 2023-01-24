@@ -4,17 +4,17 @@ import { defineConfig } from "vite";
 export default defineConfig({
   build: {
     minify: "esbuild",
+    outDir: "",
+    emptyOutDir: false,
+    sourcemap: true,
 
-    rollupOptions: {
-      input: "h5p-editor-uuid.ts",
-      output: {
-        file: "h5p-editor-uuid.js",
-        dir: undefined,
-        esModule: false,
-        format: "iife",
-      },
+    lib: {
+      entry: ["h5p-editor-uuid.ts"],
+      formats: ["iife"],
+      name: "H5PEditorCsvToText",
+      fileName: () => "h5p-editor-uuid.js",
     },
 
-    target: "es6",
+    target: "ES2015",
   },
 });
