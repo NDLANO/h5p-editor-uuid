@@ -1,19 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
-    "useDefineForClassFields": true,
+    "target": "ESNext",
     "module": "umd",
     "lib": ["ESNext", "DOM"],
     "moduleResolution": "Node",
-    "strict": true,
-    "sourceMap": true,
-    "esModuleInterop": true,
-    "noEmit": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noImplicitAny": true,
-    "skipLibCheck": true
+    "noEmit": true,
+    "ignoreDeprecations": "5.0"
   },
   "include": ["h5p-editor-uuid.ts"],
   "extends": "@tsconfig/strictest/tsconfig.json"
