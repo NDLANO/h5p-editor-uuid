@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/NDLA-H5P/h5p-editor-uuid#readme",
   "devDependencies": {
-    "@tsconfig/strictest": "^1.0.2",
+    "@tsconfig/strictest": "^2.0.0",
     "h5p-types": "^1.15.0",
     "prettier": "^2.8.7",
     "prettier-config": "github:boyum/prettier-config",
