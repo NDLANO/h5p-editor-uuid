@@ -4,8 +4,7 @@
     "module": "umd",
     "lib": ["ESNext", "DOM"],
     "moduleResolution": "Node",
-    "noEmit": true,
-    "ignoreDeprecations": "5.0"
+    "noEmit": true
   },
   "include": ["h5p-editor-uuid.ts"],
   "extends": "@tsconfig/strictest/tsconfig.json"
