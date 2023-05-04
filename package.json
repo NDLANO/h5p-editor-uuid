@@ -22,7 +22,7 @@
   "homepage": "https://github.com/NDLA-H5P/h5p-editor-uuid#readme",
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.1",
-    "h5p-types": "^1.16.2",
+    "h5p-types": "^1.17.0",
     "prettier": "^2.8.8",
     "prettier-config": "github:boyum/prettier-config",
     "typescript": "^5.0.4",
