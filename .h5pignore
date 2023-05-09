@@ -3,8 +3,9 @@ src
 .github
 .gitignore
 .h5pignore
+.eslintignore
 package.json
 package-lock.json
 README.md
-vite.config.ts
+webpack.config.js
 tsconfig.json
