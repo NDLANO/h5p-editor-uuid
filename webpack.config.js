@@ -1,11 +1,11 @@
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 
-const nodeEnv = process.env.NODE_ENV || 'development';
-const isProd = (nodeEnv === 'production');
+const mode = process.argv.includes('--mode=production') ? 'production' : 'development';
+const isProd = (mode === 'production');
 
 module.exports = {
-  mode: nodeEnv,
+  mode: mode,
   optimization: {
     minimize: isProd,
     minimizer: [
@@ -23,9 +23,10 @@ module.exports = {
   },
   output: {
     filename: 'h5p-editor-uuid.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    clean: true
   },
-  target: ['web', 'es5'], // IE11
+  target: ['browserslist'],
   module: {
     rules: [
       {
@@ -38,12 +39,7 @@ module.exports = {
             },
           },
           { 
-            loader: 'ts-loader',
-            options: {
-              compilerOptions: {
-                noEmit: false,
-              },
-            }
+            loader: 'ts-loader'
           },
         ],
         exclude: /node_modules/,

@@ -1,4 +1,9 @@
 {
+    "globals": {
+        "H5P": "readonly",
+        "H5PEditor": "readonly",
+        "H5PIntegration": "readonly"
+      },
     "env": {
         "browser": true,
         "es2021": true
@@ -7,8 +12,8 @@
     "overrides": [
     ],
     "parserOptions": {
-        "ecmaVersion": "latest",
+        "ecmaVersion": 2021,
         "sourceType": "module"
     },
-    "parser": "@typescript-eslint/parser"
+    "parser": "@typescript-eslint/parser",
 }
