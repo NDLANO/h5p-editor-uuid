@@ -1,6 +1,6 @@
 {
   "name": "h5p-editor-uuid",
-  "version": "1.0.0",
+  "version": "1.0.12",
   "description": "An H5P widget that sets the value of the field to a [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier). The widget does not render the input field.",
   "main": "h5p-editor-uuid.js",
   "scripts": {
