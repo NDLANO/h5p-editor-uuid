@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "umd",
+    "module": "commonjs",
     "lib": ["ESNext", "DOM"],
     "moduleResolution": "Node",
-    "noEmit": true
+    "noEmit": false
   },
   "include": ["h5p-editor-uuid.ts"],
   "extends": "@tsconfig/strictest/tsconfig.json"
