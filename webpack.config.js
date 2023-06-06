@@ -1,7 +1,10 @@
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 
-const mode = process.argv.includes('--mode=production') ? 'production' : 'development';
+const mode = process.argv.includes('--mode=production') ?
+  'production' :
+  'development';
+const libraryName = process.env.npm_package_name;
 const isProd = (mode === 'production');
 
 module.exports = {
@@ -19,10 +22,10 @@ module.exports = {
     ],
   },
   entry: {
-    dist: './h5p-editor-uuid.ts'
+    dist: `./${libraryName}.ts`
   },
   output: {
-    filename: 'h5p-editor-uuid.js',
+    filename: `${libraryName}.js`,
     path: path.resolve(__dirname, 'dist'),
     clean: true
   },
@@ -38,7 +41,7 @@ module.exports = {
               presets: ['@babel/preset-env'],
             },
           },
-          { 
+          {
             loader: 'ts-loader'
           },
         ],
