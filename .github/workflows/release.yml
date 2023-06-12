@@ -11,7 +11,7 @@ jobs:
       - uses: boyum/pack-h5p-action@v1.0.1
         id: release-h5p
       - uses: "marvinpinto/action-automatic-releases@latest" # https://github.com/marvinpinto/actions/tree/master/packages/automatic-releases
-        if: ${{ github.ref == 'refs/heads/main' }}
+        if: ${{ github.ref == 'refs/heads/master' }}
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: ${{steps.release-h5p.outputs.version}}
