@@ -38,7 +38,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "h5p-utils": "^3.2.1"
+    "h5p-utils": "^3.2.2"
   },
   "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead"
 }
