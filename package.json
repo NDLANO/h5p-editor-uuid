@@ -31,7 +31,7 @@
     "h5p-types": "^2.0.1",
     "ts-loader": "^9.4.4",
     "typescript": "^5.1.6",
-    "@babel/preset-env": "^7.22.6",
+    "@babel/preset-env": "^7.22.7",
     "babel-loader": "^9.1.2",
     "eslint-config-ndla-h5p": "github:NDLANO/eslint-config-ndla-h5p",
     "webpack": "^5.88.1",
