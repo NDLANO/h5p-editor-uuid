@@ -27,7 +27,7 @@
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.2",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
-    "eslint": "^8.48.0",
+    "eslint": "^8.49.0",
     "h5p-types": "^3.0.0",
     "ts-loader": "^9.4.4",
     "typescript": "^5.2.2",
