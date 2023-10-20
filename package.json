@@ -28,7 +28,7 @@
     "@tsconfig/strictest": "^2.0.2",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "eslint": "^8.51.0",
-    "h5p-types": "^4.2.0",
+    "h5p-types": "^4.2.1",
     "ts-loader": "^9.5.0",
     "typescript": "^5.2.2",
     "@babel/preset-env": "^7.23.2",
