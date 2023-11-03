@@ -9,3 +9,4 @@ README.md
 webpack.config.js
 tsconfig.json
 LICENSE
+h5p-editor-uuid.ts
