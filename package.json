@@ -29,7 +29,7 @@
     "@typescript-eslint/eslint-plugin": "^6.11.0",
     "eslint": "^8.53.0",
     "h5p-types": "^4.2.1",
-    "ts-loader": "^9.5.0",
+    "ts-loader": "^9.5.1",
     "typescript": "^5.2.2",
     "@babel/preset-env": "^7.23.3",
     "babel-loader": "^9.1.3",
