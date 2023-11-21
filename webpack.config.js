@@ -1,35 +1,39 @@
-const path = require('path');
-// Webpack provides terser-webpack-plugin
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+// Build dependencies are ok as devDependencies
 // eslint-disable-next-line import/no-extraneous-dependencies
-const TerserPlugin = require('terser-webpack-plugin');
+import TerserPlugin from 'terser-webpack-plugin';
 
-const mode = process.argv.includes('--mode=production') ?
-  'production' :
-  'development';
+const __filename = fileURLToPath(import.meta.url);  
+const __dirname = dirname(__filename);
+
+const mode = process.argv.includes('--mode=production')
+  ? 'production'
+  : 'development';
 const libraryName = process.env.npm_package_name;
-const isProd = (mode === 'production');
+const isProd = mode === 'production';
 
-module.exports = {
-  mode: mode,
+export default {
+  mode,
   optimization: {
     minimize: isProd,
     minimizer: [
       new TerserPlugin({
         terserOptions: {
-          compress:{
+          compress: {
             drop_console: true,
-          }
-        }
+          },
+        },
       }),
     ],
   },
   entry: {
-    dist: `./${libraryName}.ts`
+    dist: `./${libraryName}.ts`,
   },
   output: {
     filename: `${libraryName}.js`,
-    path: path.resolve(__dirname, 'dist'),
-    clean: true
+    path: resolve(__dirname, 'dist'),
+    clean: true,
   },
   target: ['browserslist'],
   module: {
@@ -44,15 +48,15 @@ module.exports = {
             },
           },
           {
-            loader: 'ts-loader'
+            loader: 'ts-loader',
           },
         ],
         exclude: /node_modules/,
-      }
-    ]
+      },
+    ],
   },
   stats: {
-    colors: true
+    colors: true,
   },
-  devtool: (isProd) ? undefined : 'eval-cheap-module-source-map'
+  devtool: isProd ? undefined : 'eval-cheap-module-source-map',
 };
