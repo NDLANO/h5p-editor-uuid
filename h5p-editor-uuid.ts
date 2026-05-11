@@ -1,3 +1,5 @@
+/// <reference types="jquery" />
+
 import type { H5PFieldText, IH5PWidget } from 'h5p-types';
 import { H5P, H5PWidget, registerWidget } from 'h5p-utils';
 
