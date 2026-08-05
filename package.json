@@ -25,15 +25,15 @@
   "devDependencies": {
     "@babel/preset-env": "^8.0.2",
     "@tsconfig/strictest": "^2.0.8",
-    "@typescript-eslint/eslint-plugin": "^8.63.0",
-    "@typescript-eslint/parser": "^8.63.0",
+    "@typescript-eslint/eslint-plugin": "^8.65.0",
+    "@typescript-eslint/parser": "^8.65.0",
     "babel-loader": "^10.1.1",
     "eslint-config-ndla-h5p": "github:NDLANO/eslint-config-ndla-h5p",
     "h5p-types": "^5.6.0",
     "terser-webpack-plugin": "^5.6.1",
     "ts-loader": "^9.6.2",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.63.0",
+    "typescript-eslint": "^8.65.0",
     "webpack": "^5.108.4",
     "webpack-cli": "^7.2.1"
   },
